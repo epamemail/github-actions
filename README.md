@@ -1,1 +1,1 @@
-# Build Status Badge: [![First action](https://github.com/epamemail/github-actions/actions/workflows/example.yml/badge.svg?branch=main)](https://github.com/epamemail/github-actions/actions/workflows/example.yml)
+# My custom action
