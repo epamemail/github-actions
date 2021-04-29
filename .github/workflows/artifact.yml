@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out the code
-      uses: actions/checkout@v2
-    - name: Upload the artifact
+#       uses: actions/checkout@v2
       uses: Orfey95/CloudFromation@master
-#       uses: actions/upload-artifact@v2
+    - name: Upload the artifact
+      uses: actions/upload-artifact@v2
       with:
         name: ${{ env.ARTIFACT_NAME }}
         path: .
