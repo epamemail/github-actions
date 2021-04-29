@@ -16,8 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out the code
-#       uses: actions/checkout@v2
-      uses: Orfey95/CloudFromation@master
+      uses: actions/checkout@v2
+      with:
+        repository: Orfey95/CloudFromation@master
+        ref: master
+        submodules: true
+        path: .
     - name: Upload the artifact
       uses: actions/upload-artifact@v2
       with:
