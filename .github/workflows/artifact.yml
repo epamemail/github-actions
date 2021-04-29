@@ -18,7 +18,7 @@ jobs:
     - name: Check out the code
       uses: actions/checkout@v2
     - name: Upload the artifact
-      uses: Orfey95/CloudFromation@vmaster
+      uses: Orfey95/CloudFromation@master
 #       uses: actions/upload-artifact@v2
       with:
         name: ${{ env.ARTIFACT_NAME }}
