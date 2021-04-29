@@ -1,6 +1,12 @@
 name: custom
 
-on: push
+on: [push, pull_request]
+#   push:
+#     branches:
+#     - 'workflow_from_my_custom_action'
+#   pull_request:
+#     branches:
+#     - 'workflow_from_my_custom_action
 
 jobs:
   main:
