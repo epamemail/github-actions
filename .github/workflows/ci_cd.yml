@@ -9,13 +9,13 @@ on:
     - 'ci_cd'
 
 jobs:
-  test python script:
+  test_python_script:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: python hello_world.py
-  build python script:
-    needs: [test python script]
+  build_python_script:
+    needs: [test_python_script]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
