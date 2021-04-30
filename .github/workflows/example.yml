@@ -12,7 +12,7 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - run: date
+    - run: ip a
   windows:
     runs-on: windows-latest
     steps:
