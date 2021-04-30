@@ -12,11 +12,11 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - run: date #traceroute google.com
+    - run: date
   windows:
     runs-on: windows-latest
     steps:
-    - run: tracert google.com # date
+    - run: date #tracert google.com 
   macos:
     runs-on: macos-latest
     steps:
