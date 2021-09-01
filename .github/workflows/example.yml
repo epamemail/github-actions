@@ -3,26 +3,16 @@ name: First action
 on:
   push:
     branches:
-    - 'main'
-  pull_request:
-    branches:
-    - 'main'
-
+    - 'log_levels'
 jobs:
-  ubuntu:
+  OUTPUT:
+    name: Output
     runs-on: ubuntu-latest
+
     steps:
-    - run: date
-  windows:
-    runs-on: windows-latest
-    steps:
-    - run: date #tracert google.com 
-  macos:
-    runs-on: macos-latest
-    steps:
-    - run: date
-  depends:
-    needs: [ubuntu, windows, macos]
-    runs-on: macos-latest
-    steps:
-    - run: date
+    - name: Log levels
+      run: |
+        echo "::debug::This is a debug message"
+        echo "This is an info message"
+        echo "::warning::This is a warning"
+        echo "::error::This is an error"
